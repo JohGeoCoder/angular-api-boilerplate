@@ -26,3 +26,7 @@
 /.vs/DatabaseEntities/v15/Server/sqlite3
 /.vs/DatabaseEntities/v15/.suo
 /AngularAPIBoilerplate/APIServer.csproj.user
+/WebServer/bin/Debug/netcoreapp2.2
+/WebServer/ClientApp/node_modules
+/WebServer/obj
+/WebServer/ClientApp/.vscode

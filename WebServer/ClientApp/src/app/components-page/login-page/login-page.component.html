@@ -1,0 +1,61 @@
+<section class="login-page">
+
+  <div class="accordion-section">
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="step === 0">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Login</mat-panel-title>
+          <mat-panel-description>Enter your credentials</mat-panel-description>
+        </mat-expansion-panel-header>
+        <div>
+          <mat-form-field>
+            <input matInput [(ngModel)]="loginModel.username" placeholder="Username">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field>
+            <input matInput [(ngModel)]="loginModel.password" type="password" placeholder="Password">
+          </mat-form-field>
+        </div>
+        <div>
+          <button mat-button (click)="onLogin($event)">Login</button>
+          <div>{{error}}</div>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel [expanded]="step === 1">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Register</mat-panel-title>
+          <mat-panel-description>Click here to register</mat-panel-description>
+        </mat-expansion-panel-header>
+          <div>
+            <mat-form-field>
+              <input matInput [(ngModel)]="registrationModel.firstName" placeholder="First Name">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <input matInput [(ngModel)]="registrationModel.lastName" placeholder="Last Name">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <input matInput [(ngModel)]="registrationModel.email" placeholder="Email">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <input matInput [(ngModel)]="registrationModel.username" placeholder="Username">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field>
+              <input matInput [(ngModel)]="registrationModel.password" type="password" placeholder="Password">
+            </mat-form-field>
+          </div>
+        <div>
+          <button mat-button (click)="onRegister()">Register</button>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>  
+</section>
