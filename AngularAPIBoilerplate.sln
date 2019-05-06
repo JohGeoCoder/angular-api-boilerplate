@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularAPIBoilerplate", "AngularAPIBoilerplate\AngularAPIBoilerplate.csproj", "{D1B43E05-38E4-4F92-A2B2-DECEB6540F60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIServer", "AngularAPIBoilerplate\APIServer.csproj", "{D1B43E05-38E4-4F92-A2B2-DECEB6540F60}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigSettings", "ConfigSettings\ConfigSettings.csproj", "{2C120941-7744-4BB1-8D1D-369ED33F22B9}"
 EndProject
