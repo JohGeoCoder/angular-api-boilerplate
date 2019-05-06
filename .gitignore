@@ -3,3 +3,23 @@
 /.vs/AngularAPIBoilerplate/v15/Server/sqlite3
 /.vs/AngularAPIBoilerplate/v15/.suo
 
+/.vs/config/applicationhost.config
+/AngularAPIBoilerplate/AngularAPIBoilerplate.csproj.user
+/ConfigSettings/bin/Debug/netcoreapp2.2
+/ConfigSettings/obj
+/Database/bin/Debug/netcoreapp2.2
+/Database/obj
+/Exceptions/bin/Debug/netcoreapp2.2
+/Exceptions/obj
+/HelperClasses/bin/Debug/netcoreapp2.2
+/HelperClasses/obj
+/Interfaces/bin/Debug/netcoreapp2.2
+/Interfaces/obj/Debug/netcoreapp2.2
+/Interfaces/obj
+/Models/bin/Debug/netcoreapp2.2
+/Models/obj
+/Models.Entities/bin/Debug/netcoreapp2.2
+/Models.Entities/obj
+/Services/bin/Debug/netcoreapp2.2
+/Services/obj
+/AngularAPIBoilerplate/Properties/PublishProfiles

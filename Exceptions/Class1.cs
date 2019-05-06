@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AngularAPIBoilerplate
+namespace Exceptions
 {
     public class Class1
     {
