@@ -35,7 +35,7 @@ export class LoginPageComponent implements OnInit {
       .pipe(first())
       .subscribe(
         data => {
-          this.router.navigate(['/applications']);
+          this.router.navigate(['/']);
         }, 
         error => {
           this.error = error;
@@ -48,7 +48,7 @@ export class LoginPageComponent implements OnInit {
       .pipe(first())
       .subscribe(
         data => {
-          this.router.navigate(['/applications']);
+          this.router.navigate(['/']);
         }, 
         error => {
           this.error = error;

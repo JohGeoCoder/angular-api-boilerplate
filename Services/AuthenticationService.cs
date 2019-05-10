@@ -46,7 +46,7 @@ namespace Services
             if (string.IsNullOrWhiteSpace(user.PasswordHash)) return null;
 
             //Return null if the password is invalid
-            if (PasswordHelper.ValidatePassword(login.Password, user.PasswordHash)) return null;
+            if (!PasswordHelper.ValidatePassword(login.Password, user.PasswordHash)) return null;
 
             //Authentication successful so generate jwt token
             var token = GenerateToken(user);
@@ -78,7 +78,12 @@ namespace Services
                 PasswordHash = passwordHash
             };
 
-            var createdUser = await _userService.Create(newUser);
+            await _userService.Create(newUser);
+
+            var createdUser = _userService.GetAllThenInclude(
+                u => u.Id == newUser.Id,
+                IncludeBuilder<User>.Include(u => u.UserRole).ThenInclude(ur => ur.Role).Done()
+            ).Single();
 
             //Registration successful so generate jwt token
             var token = GenerateToken(createdUser);
