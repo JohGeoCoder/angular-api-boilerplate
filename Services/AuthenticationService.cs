@@ -34,7 +34,7 @@ namespace Services
         public AuthenticationResultModel Authenticate(LoginModel login)
         {
             var user = _userService.GetAllThenInclude(
-                u => u.Username == login.Username,
+                u => u.Username.ToLower() == login.Username.ToLower(),
                 IncludeBuilder<User>.Include(u => u.UserRole).ThenInclude(userRole => userRole.Role).Done()
             )
             .SingleOrDefault();
@@ -69,19 +69,24 @@ namespace Services
 
             var passwordHash = PasswordHelper.HashPassword(registration.Password);
 
-            var newUser = new User
+            var userToCreate = new User
             {
-                FirstName = registration.FirstName,
-                LastName = registration.LastName,
-                Email = registration.Email,
-                Username = registration.Username,
+                FirstName = registration.FirstName.ToLower(),
+                LastName = registration.LastName.ToLower(),
+                Email = registration.Email.ToLower(),
+                Username = registration.Username.ToLower(),
                 PasswordHash = passwordHash
             };
 
-            await _userService.Create(newUser);
+            //userToCreate.UserRole.Add(new UserRole
+            //{
+            //    RoleId = (long)Roles.BasicUser
+            //});
+
+            await _userService.Create(userToCreate);
 
             var createdUser = _userService.GetAllThenInclude(
-                u => u.Id == newUser.Id,
+                u => u.Id == userToCreate.Id,
                 IncludeBuilder<User>.Include(u => u.UserRole).ThenInclude(ur => ur.Role).Done()
             ).Single();
 
