@@ -1,1 +1,1 @@
-﻿Scaffold-DbContext "" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "DbModels" -Tables User,Role,UserRole -Context "AngularAPIBoilerplateDbContext" -Force
+﻿Scaffold-DbContext "" Microsoft.EntityFrameworkCore.SqlServer -OutputDir "DbModels" -Tables User,Role,UserRole -Context "WebsiteApiDbContext" -Force

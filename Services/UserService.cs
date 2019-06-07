@@ -6,8 +6,8 @@ using System.Text;
 
 namespace Services
 {
-    public class UserService : BaseRepoService<User, AngularAPIBoilerplateDbContext>, IUserService<User>
+    public class UserService : BaseRepoService<User, WebsiteApiDbContext>, IUserService<User>
     {
-        public UserService(AngularAPIBoilerplateDbContext dbContext) : base(dbContext) { }
+        public UserService(WebsiteApiDbContext dbContext) : base(dbContext) { }
     }
 }

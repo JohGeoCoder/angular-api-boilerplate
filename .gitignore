@@ -1,10 +1,10 @@
-﻿/AngularAPIBoilerplate/obj
-/AngularAPIBoilerplate/bin
-/.vs/AngularAPIBoilerplate/v15/Server/sqlite3
-/.vs/AngularAPIBoilerplate/v15/.suo
+﻿/WebsiteApi/obj
+/WebsiteApi/bin
+/.vs/WebsiteApi/v15/Server/sqlite3
+/.vs/WebsiteApi/v15/.suo
 
 /.vs/config/applicationhost.config
-/AngularAPIBoilerplate/AngularAPIBoilerplate.csproj.user
+/WebsiteApi/WebsiteApi.csproj.user
 /ConfigSettings/bin/Debug/netcoreapp2.2
 /ConfigSettings/obj
 /Database/bin/Debug/netcoreapp2.2
@@ -22,11 +22,14 @@
 /Models.Entities/obj
 /Services/bin/Debug/netcoreapp2.2
 /Services/obj
-/AngularAPIBoilerplate/Properties/PublishProfiles
+/WebsiteApi/Properties/PublishProfiles
 /.vs/DatabaseEntities/v15/Server/sqlite3
 /.vs/DatabaseEntities/v15/.suo
-/AngularAPIBoilerplate/APIServer.csproj.user
-/WebServer/bin/Debug/netcoreapp2.2
-/WebServer/ClientApp/node_modules
-/WebServer/obj
-/WebServer/ClientApp/.vscode
+/WebsiteApi/WebsiteApi.csproj.user
+/WebsiteApplication/bin/Debug/netcoreapp2.2
+/WebsiteApplication/ClientApp/node_modules
+/WebsiteApplication/obj
+/WebsiteApplication/ClientApp/.vscode
+/.vs/AngularAPIBoilerplate/v15/Server/sqlite3
+/.vs/AngularAPIBoilerplate/v15/.suo
+/.vscode

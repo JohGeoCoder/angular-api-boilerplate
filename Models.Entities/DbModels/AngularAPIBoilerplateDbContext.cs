@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Models.Entities.DbModels
 {
-    public partial class AngularAPIBoilerplateDbContext : DbContext
+    public partial class WebsiteApiDbContext : DbContext
     {
-        public AngularAPIBoilerplateDbContext()
+        public WebsiteApiDbContext()
         {
         }
 
-        public AngularAPIBoilerplateDbContext(DbContextOptions<AngularAPIBoilerplateDbContext> options)
+        public WebsiteApiDbContext(DbContextOptions<WebsiteApiDbContext> options)
             : base(options)
         {
         }
