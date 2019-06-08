@@ -34,3 +34,6 @@
 /.vs/AngularAPIBoilerplate/v15/.suo
 /.vscode
 /WebServer/obj
+bin
+/WebsiteApplication/Properties/PublishProfiles
+/WebsiteApplication/WebsiteApplication.csproj.user
