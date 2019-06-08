@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { 
-  MatFormField, 
+  MatButtonModule,
   MatFormFieldModule, 
   MatInputModule, 
   MatDialogModule, 
@@ -17,26 +17,21 @@ import { JwtInterceptor } from 'src/app/interceptors/jwt.interceptor';
 import { ErrorInterceptor } from 'src/app/interceptors/error.interceptor';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components-page/home-page/home-page.component';
-import { ApplicationPageComponent } from './components-page/application-page/application-page.component';
-import { HeaderComponent } from './components-header/header/header.component';
-import { NavComponent } from './components-header/nav/nav.component';
-import { FooterComponent } from './components-footer/footer/footer.component';
 import { LoginPageComponent } from './components-page/login-page/login-page.component';
+import { LoginComponent } from './components-general/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    ApplicationPageComponent,
-    HeaderComponent,
-    NavComponent,
-    FooterComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatFormFieldModule,
+    MatButtonModule,
     MatInputModule,
     MatDialogModule,
     MatCheckboxModule,
@@ -47,7 +42,7 @@ import { LoginPageComponent } from './components-page/login-page/login-page.comp
     HttpClientModule
   ],
   entryComponents: [
-    //DialogOverviewExampleDialog
+    //Any Angular Material dialogs must be entered here
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

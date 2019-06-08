@@ -33,3 +33,4 @@
 /.vs/AngularAPIBoilerplate/v15/Server/sqlite3
 /.vs/AngularAPIBoilerplate/v15/.suo
 /.vscode
+/WebServer/obj

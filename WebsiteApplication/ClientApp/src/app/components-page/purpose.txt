@@ -1,0 +1,7 @@
+component-page directory
+
+This is an arbitrary file organization decision that can be ignored and overridden
+
+Page Components are simple containers, without complex functionality
+Page Components are the only type of component referenced in the app-routing.module.ts file.
+Page Components contain child components, which will house the complex functionality.
