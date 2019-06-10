@@ -37,3 +37,5 @@
 bin
 /WebsiteApplication/Properties/PublishProfiles
 /WebsiteApplication/WebsiteApplication.csproj.user
+
+dist

@@ -14,11 +14,11 @@ import { Registration } from 'src/app/models/registration';
 })
 export class LoginComponent implements OnInit {
 
-  private error: string = '';
-  private step: number = 0;
+  error: string = '';
+  step: number = 0;
 
-  private loginModel: Login = new Login();
-  private registrationModel: Registration = new Registration();
+  loginModel: Login = new Login();
+  registrationModel: Registration = new Registration();
 
   constructor(
     private route: ActivatedRoute,
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  private onLogin = () => {
+  onLogin = () => {
     this.authenticationService.login(this.loginModel)
       .pipe(first())
       .subscribe(
@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
       );
   }
 
-  private onRegister = () => {
+  onRegister = () => {
     this.authenticationService.register(this.registrationModel)
       .pipe(first())
       .subscribe(
